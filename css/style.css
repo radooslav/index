@@ -246,6 +246,9 @@ form{
     .socialmedia-wrapper i{
         font-size: 20px;
     }
+    .socialmedia-wrapper a{
+        z-index: 999;
+    }
     .separator{
         display: none;
         
