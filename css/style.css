@@ -225,11 +225,13 @@ form{
 }
 .socialmedia-wrapper a{
     float: left;
-    padding-left: 2%;
+    padding-left:10px;
+   
 }
 .socialmedia-wrapper i{
     color: #8c43ff;
     font-size: 12px;
+    padding-left: 2%;
 }
 
 
