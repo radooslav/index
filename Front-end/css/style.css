@@ -1,4 +1,4 @@
-body {
+html,body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -217,6 +217,10 @@ body {
 .row-100{
     display: none;
 }
+.row{
+
+}
+
 .social-box{
     margin-bottom: 15px;
     border-radius: 10px;
@@ -901,6 +905,8 @@ select:-webkit-autofill:focus {
     .row-100 {
         display: block;
         width: 100% !important;
+    }
+    .row{
     }
     .social-wrapper{
         display: block !important;
