@@ -193,95 +193,95 @@
         </div>
         <div class="container form-wrapper">
             <!--Section: Contact v.2-->
-<section class="mb-4 form-wrapper">
-        <!--Section description-->
-        <div class="row">
-    
-            <!--Grid column-->
-            <div class="col-md-10 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-    
-                    <!--Grid row-->
-                    <div class="row">
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" placeholer="xd" class="form-control">
-                                <div for="name" class="label">Your name</div>
+            <section class="mb-4 form-wrapper">
+                <!--Section description-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-10 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" placeholer="xd" class="form-control">
+                                        <div for="name" class="label">Your name</div>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <div for="email" class="label">Your email</div>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
                             </div>
-                        </div>
-                        <!--Grid column-->
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control">
-                                <div for="email" class="label">Your email</div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <div for="subject" class="label">Subject</div>
+                                    </div>
+                                </div>
                             </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <div for="message" class="label">Your message</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn" onclick="document.getElementById('contact-form').submit();">Send</a>
                         </div>
-                        <!--Grid column-->
-    
+                        <div class="status"></div>
                     </div>
-                    <!--Grid row-->
-    
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control">
-                                <div for="subject" class="label">Subject</div>
-                            </div>
-                        </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-2 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fa fa-map-marker fa-2x"></i>
+                                <p>Gdańsk, Poland</p>
+                            </li>
+
+                            <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                                <p>+48 690 331 130</p>
+                            </li>
+
+                            <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                                <p>contact@radoslawbegej.pl</p>
+                            </li>
+                        </ul>
                     </div>
-                    <!--Grid row-->
-    
-                    <!--Grid row-->
-                    <div class="row">
-    
-                        <!--Grid column-->
-                        <div class="col-md-12">
-    
-                            <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                <div for="message" class="label">Your message</div>
-                            </div>
-    
-                        </div>
-                    </div>
-                    <!--Grid row-->
-    
-                </form>
-    
-                <div class="text-center text-md-left">
-                    <a class="btn" onclick="document.getElementById('contact-form').submit();">Send</a>
+                    <!--Grid column-->
+
                 </div>
-                <div class="status"></div>
-            </div>
-            <!--Grid column-->
-    
-            <!--Grid column-->
-            <div class="col-md-2 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fa fa-map-marker fa-2x"></i>
-                        <p>Gdańsk, Poland</p>
-                    </li>
-    
-                    <li><i class="fa fa-phone mt-4 fa-2x"></i>
-                        <p>+48 690 331 130</p>
-                    </li>
-    
-                    <li><i class="fa fa-envelope mt-4 fa-2x"></i>
-                        <p>contact@radoslawbegej.pl</p>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-    
-        </div>
-    
-    </section>
-    <!--Section: Contact v.2-->
+
+            </section>
+            <!--Section: Contact v.2-->
         </div>
     </div>
     <div class="footer-wrapper text-center">
@@ -345,6 +345,60 @@
             },
             afterClose: function () {
                 console.log("The animation is completed");
+            }
+        });
+
+        var nav = document.querySelector('.navbar-toggler');
+
+        var toggleState = function (elem, one, two) {
+            elem.setAttribute('data-state', elem.getAttribute('data-state') === one ? two : one);
+        };
+
+        nav.onclick = function (event) {
+            toggleState(event.target, 'closed', 'open');
+            event.preventDefault();
+        };
+
+        $(window).bind('resize', function (e) {
+            console.log('window resized..');
+            this.location.reload(false); /* false to get page from cache */
+            /* true to fetch page from server */
+        });
+
+
+
+        /*---------- ajax contact-form ---------*/
+        document.getElementById('status').innerHTML = "Sending...";
+        formData = {
+            'name': $('input[name=name]').val(),
+            'email': $('input[name=email]').val(),
+            'subject': $('input[name=subject]').val(),
+            'message': $('textarea[name=message]').val()
+        };
+
+
+        $.ajax({
+            url: "mail.php",
+            type: "POST",
+            data: formData,
+            success: function (data, textStatus, jqXHR) {
+
+                $('#status').text(data.message);
+                if (data.code) //If mail was sent successfully, reset the form.
+                    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                $('#status').text(jqXHR);
+            }
+        });
+
+
+        /*---- colapse close resize ---*/
+        $(window).bind('resize load', function () {
+            if ($(this).width() < 767) {
+                $('.collapse').addClass('show');
+            } else {
+                $('.collapse').removeClass('show');
             }
         });
     </script>
