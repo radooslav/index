@@ -44,3 +44,13 @@ error: function (jqXHR, textStatus, errorThrown)
 $('#status').text(jqXHR);
 }
 });
+
+
+/*---- colapse close resize ---*/
+$(window).bind('resize load', function() {
+  if ($(this).width() < 767) {
+      $('.collapse').addClass('show');
+  } else {
+      $('.collapse').removeClass('show');
+  }
+});
